@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using API.Data;
 using System.Collections.Generic;
 using API.Models;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,5 +31,6 @@ namespace API.Controllers
         {
             return await _context.Users.FindAsync(id);
         }
+
     }
 }
